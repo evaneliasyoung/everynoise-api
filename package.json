@@ -1,0 +1,51 @@
+{
+  "name": "everynoise-api",
+  "version": "1.0.0",
+  "description": "EveryNoiseAtOnce API",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier -w .",
+    "format-check": "prettier -c .",
+    "lint": "eslint src",
+    "test": "jest",
+    "start": "node --loader ts-node/esm/transpile-only src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evaneliasyoung/mysound.git"
+  },
+  "keywords": [
+    "EveryNoise"
+  ],
+  "author": "Evan Elias Young",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/evaneliasyoung/everynoise-api"
+  },
+  "homepage": "https://github.com/evaneliasyoung/everynoise-api#readme",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "cheerio": "^1.0.0-rc.10"
+  },
+  "devDependencies": {
+    "@jest/globals": "^27.5.1",
+    "@types/cheerio": "^0.22.31",
+    "@types/jest": "^27.4.1",
+    "@typescript-eslint/parser": "^5.19.0",
+    "eslint": "^8.13.0",
+    "eslint-plugin-github": "^4.3.6",
+    "eslint-plugin-jest": "^26.1.4",
+    "eslint-plugin-node": "^11.1.0",
+    "jest": "^27.5.1",
+    "prettier": "^2.6.2",
+    "ts-jest": "^27.1.4",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  }
+}
